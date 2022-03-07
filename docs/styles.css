@@ -3,8 +3,6 @@
   --second: #37465b;
   --thrid: #08c6ab;
   --fourth: #5affe7;
-  --fiveth: #726eff;
-  --sixth: #246a80;
   --seventh: #effbff;
   --white: #effaff;
   --check: #d5d5d5;
@@ -179,11 +177,17 @@ header .brand-name {
 }
 /* Heading of the item */
 .wrapper .taskList .task .task-container h2 {
+  max-width: 350px;
+  max-height: 50px;
+  overflow: scroll;
   margin: 10px;
   padding: 5px;
 }
 .wrapper .taskList .task .task-container h2.checked {
   text-decoration: line-through;
+}
+.wrapper .taskList .task .task-container h2::-webkit-scrollbar {
+  display: none;
 }
 /* Remove Icon */
 .wrapper .taskList .task .task-container .remove-icon {
